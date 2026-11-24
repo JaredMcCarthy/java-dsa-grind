@@ -13,7 +13,7 @@ public class problema2_1 {
         if (pn == 0) {
             System.out.println(pn + " Es cero. ");
         } else {
-            String numero = (pn > 0) ? "Positivo" : "Negativo";
+            String numero = (pn > 0) ? "Positivo" : "Negativo"; //nueva manera de condiciones
 
             String paridad = (pn % 2 == 0) ? "Par" : "Impar";
 
