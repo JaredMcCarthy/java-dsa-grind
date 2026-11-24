@@ -1,4 +1,4 @@
-# java-dsa-grind ☕
+# java-dsa-grind 
 
 Mi laboratorio de **estructuras de datos y algoritmos** en Java en la chillo.
 
