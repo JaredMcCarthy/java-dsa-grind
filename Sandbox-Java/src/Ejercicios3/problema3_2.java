@@ -3,14 +3,14 @@ package Ejercicios3;
 import java.util.Scanner;
 
 public class problema3_2 {
-    public void main(String[] args) {
+    public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Ingrese un caracter: ");
+        System.out.print("Primer numero: ");
         int numero1 = scanner.nextInt();
 
-        System.out.print("Ingrese un segundo caracter: ");
+        System.out.print("Segundo numero: ");
         int numero2 = scanner.nextInt();
 
         System.out.print("Que desea ejecutar +, -, *, /:  ");
@@ -23,19 +23,23 @@ public class problema3_2 {
 
         switch (digito) {
             case '+':
-                System.out.println((numero1 + digito +  numero2 + " -> " + suma));
+                System.out.println(numero1 + " + " + numero2 + " -> " + suma);
                 break;
             case '-':
-                System.out.println((numero1 + digito +  numero2 + " -> " + resta));
+                System.out.println(numero1 + " - " + numero2 + " -> " + resta);
                 break;
             case '*':
-                System.out.println((numero1 + digito +  numero2 + " -> " + multiplicacion));
+                System.out.println( numero1 + " * " + numero2 + " -> "  + multiplicacion);
                 break;
             case '/':
-                System.out.println((numero1 + digito +  numero2 + " -> " + division));
+                if (numero2 == 0) {
+                    System.out.println("Error: no se puede dividir entre 0.");
+                } else{
+                    System.out.println((numero1 + " / " +  numero2 + " -> " + division));
+                }
                 break;
             default:
-                System.out.print("Error: no se puede dividir entre 0.");
+                System.out.print("Error: operador invalido. ");
     }
     }
 }
